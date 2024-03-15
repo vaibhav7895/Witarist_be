@@ -12,7 +12,7 @@ app.use("/taskRouter", taskRouter);
 
 
 
-app.listen(process.env.PORT, async () => {
+app.listen(3000, async () => {
     try {
         await connection;
         console.log("Connected to the database");
@@ -20,6 +20,6 @@ app.listen(process.env.PORT, async () => {
     } catch (err) {
         console.error("Error connecting to the database:", err);
     }
-    console.log(`Server is running on port no ${process.env.PORT}`);
+    console.log("Server started on port 3000");
 });
 
