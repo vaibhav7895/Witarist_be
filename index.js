@@ -11,7 +11,7 @@ app.use("/taskRouter", taskRouter);
 
 
 
-app.listen(3000, async () => {
+app.listen(process.env.PORT, async () => {
     try {
         await connection;
         console.log("Connected to the database");
